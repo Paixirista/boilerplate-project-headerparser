@@ -39,7 +39,7 @@ app.get("/api/whoami", function (req, res) {
         req.connection.remoteAddress ||
         req.socket.remoteAddress ||
         req.connection.socket.remoteAddress).split(",")[0];*/
-    data = {
+    var data = {
         ipaddress: ip,
         language: req.get("accept-language"),
         software: req.get("user-agent")
